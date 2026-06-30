@@ -1,0 +1,200 @@
+```css
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f7f4;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#1c7c54;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd54f;
+}
+
+.banner{
+height:90vh;
+background:url("imagens/banner.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.banner-text{
+background:rgba(0,0,0,.55);
+padding:40px;
+border-radius:10px;
+color:white;
+width:70%;
+}
+
+.banner h2{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.banner p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.botao{
+background:#ff9800;
+padding:15px 40px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
+}
+
+.botao:hover{
+background:#ffb300;
+}
+
+.sobre{
+padding:80px 10%;
+text-align:center;
+}
+
+.sobre h2{
+font-size:38px;
+margin-bottom:20px;
+color:#1c7c54;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:60px 10%;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:#1c7c54;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.beneficios{
+background:#1c7c54;
+color:white;
+padding:80px 10%;
+text-align:center;
+}
+
+.beneficios h2{
+margin-bottom:40px;
+font-size:38px;
+}
+
+.lista{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.lista div{
+background:white;
+color:#333;
+padding:30px;
+border-radius:10px;
+}
+
+.informacoes{
+padding:80px 10%;
+text-align:center;
+}
+
+.informacoes h2{
+font-size:38px;
+margin-bottom:20px;
+color:#1c7c54;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+margin-top:20px;
+}
+
+.banner h2{
+font-size:36px;
+}
+
+.banner p{
+font-size:18px;
+}
+
+}
+```
